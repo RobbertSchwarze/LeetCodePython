@@ -21,13 +21,7 @@ def hasIncrease(nums: list[int]) -> bool:
             return True
         
     return False
-        
-
-    
-
-
-
-        
+              
 print(hasIncrease([5,4,3,2])) # False
 print(hasIncrease([5,4,6,2])) # True
-print(hasIncrease([1])) # True
+print(hasIncrease([1])) # False
