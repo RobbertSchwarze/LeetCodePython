@@ -14,14 +14,15 @@ def longestPlateau(nums: list[int]) -> int:
     for i in range(0, len(nums) -1 ):
 
         #print(f"Compare: {nums[i]} == {nums[i + 1]}")
-        if (nums[i] == nums[i + 1]):
+        if ( (nums[i]) == (nums[i + 1]) ):
             current_plateau += 1
             # Per iteratie houden we onze max_plateau bij.
-            if (max_plateau < current_plateau):
+            if ( (max_plateau) < (current_plateau) ):
                 max_plateau = current_plateau
                 #print(f"Max_Plateau: {max_plateau}")
         
-        if(nums[i] != nums[i + 1]):
+        # Hier detecteren we of het plateau is gestopt.
+        if( (nums[i]) != (nums[i + 1]) ):
             current_plateau = 1
   
     return max_plateau
