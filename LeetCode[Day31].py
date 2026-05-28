@@ -45,21 +45,16 @@ def shortestGroup(nums: list[int]) -> int:
             length_current_group += 1
             #print(f"length_of_current_group = {length_current_group}")
         else:
-            shortest_group = length_current_group
+            if (length_current_group < shortest_group):
+                shortest_group = length_current_group
+                
             length_current_group = 1
     
     if (shortest_group > length_current_group):
         shortest_group = length_current_group
 
     return shortest_group
-
-
     
-    
-    
-
-    
-            
 print(shortestGroup([1,1,2,2,2,3]))      # 1
 print(shortestGroup([5,5,5]))            # 3
 print(shortestGroup([1,2,3]))            # 1
