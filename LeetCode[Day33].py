@@ -47,8 +47,8 @@ def countLargeGroups(nums: list[int]) -> int:
             # If we detect a new group, we have to first compare if the current_length >= 2 so we can count a full group.
             if( (current_length >= 2) ):
                 groups_bigger_than_2 += 1
-                # Then we will reset the current_length to 1, because we're in a new group.
-        
+            
+            # Then we will reset the current_length to 1, because we're in a new group.
             current_length = 1
 
     # If the loop finished, then we also have to think? Was there a group >= 2?
