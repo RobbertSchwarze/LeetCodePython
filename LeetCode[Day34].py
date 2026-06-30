@@ -44,6 +44,6 @@ print(countAdjacentDuplicates([1,2,2,3,3,3])) # 3
 print(countAdjacentDuplicates([1,2,3,4,5]))   # 0
 
 
-# Time Complexity =
-# Space Complexity =
-# Pattern =
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Neighbor Comparison, Counting

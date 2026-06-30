@@ -44,6 +44,6 @@ print(countValueChanges([1,2]))             # 1
 print(countValueChanges([1,2,2,3,3,1]))     # 3
 
 
-# Time Complexity =
-# Space Complexity =
-# Pattern =
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Neighbor Comparison, Counting
