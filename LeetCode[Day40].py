@@ -25,16 +25,10 @@
 
 def count_valleys(nums: list[int]) -> int:
 
-    # We'll set up a count variable. 
     count = 0
     
-    # Alright so, we need to count the valleys.
-    # Which means we need to count how many times a integer is smaller than the number before and after it.
-
-    # Pretty simple, we'll do what we have learned yesterday. By starting with the right i.
-
     for i in range(1, len(nums) - 1):
-        if (nums[i] < nums[i-1] and nums[i] < nums[i + 1]):
+        if (nums[i] < nums[i - 1] and nums[i] < nums[i + 1]):
             count += 1
     
     return count
@@ -50,3 +44,7 @@ print(count_valleys([3, 1, 2]))           # 1
 print(count_valleys([1, 3, 1]))           # 0
 print(count_valleys([2, 2, 1, 2]))        # 1
 print(count_valleys([3, 1, 3, 1, 3]))     # 2
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Neighbor Comparison, Counting, Triple Comparison
