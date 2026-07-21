@@ -39,3 +39,7 @@ print(count_strictly_increasing_middle([1, 1, 2]))        # 0
 print(count_strictly_increasing_middle([1, 2, 2]))        # 0
 print(count_strictly_increasing_middle([3, 2, 1]))        # 0
 print(count_strictly_increasing_middle([1, 2, 3, 2, 4]))  # 1
+
+#Time Complexity = O(n)
+#Space Complexity = O(1)
+# Pattern = Counting, Triple Comparison, Neighbor Comparison
