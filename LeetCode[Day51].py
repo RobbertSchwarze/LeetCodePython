@@ -13,19 +13,7 @@
 # Function name:
 # count_strictly_decreasing_middle
 
-def count_strictly_decreasing_middle1(nums: list[int]) -> int:
-
-    # Okay so we have to check if the number before, bigger. number after, smaller.
-    count = 0
-
-    for i in range(1, len(nums) - 1):
-
-        if (nums[i] < nums[i -1] and nums[i] > nums[i + 1]):
-            count += 1
-
-    return count
-
-# I saw that it's better to triple comparison immediatly. 
+# I saw that it's better to triple comparison is better to write it this way. 
 
 def count_strictly_decreasing_middle(nums: list[int]) -> int:
 
@@ -39,8 +27,6 @@ def count_strictly_decreasing_middle(nums: list[int]) -> int:
 
     return count
 
-
-
 print(count_strictly_decreasing_middle([3, 2, 1]))        # 1
 print(count_strictly_decreasing_middle([1, 3, 2]))        # 0
 print(count_strictly_decreasing_middle([8, 6, 4, 2]))     # 2
@@ -53,3 +39,7 @@ print(count_strictly_decreasing_middle([3, 3, 2]))        # 0
 print(count_strictly_decreasing_middle([3, 2, 2]))        # 0
 print(count_strictly_decreasing_middle([1, 2, 3]))        # 0
 print(count_strictly_decreasing_middle([5, 4, 3, 4, 2]))  # 1
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Neighbor Comparison, Triple Comparison, Counting
