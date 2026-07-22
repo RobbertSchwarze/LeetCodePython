@@ -26,7 +26,6 @@ def count_equal_to_exactly_one_neighbor(nums: list[int]) -> int:
     
     return count
 
-
 print(count_equal_to_exactly_one_neighbor([1, 1, 2]))        # 1
 print(count_equal_to_exactly_one_neighbor([1, 1, 1]))        # 0
 print(count_equal_to_exactly_one_neighbor([1, 2, 2, 3]))     # 2
@@ -39,3 +38,7 @@ print(count_equal_to_exactly_one_neighbor([2, 2, 2]))        # 0
 print(count_equal_to_exactly_one_neighbor([2, 2, 3, 2]))     # 1
 print(count_equal_to_exactly_one_neighbor([1, 2, 3, 4]))     # 0
 print(count_equal_to_exactly_one_neighbor([5, 5, 4, 4, 4]))  # 2
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Neighbor Comparison, Triple Comparison, Counting

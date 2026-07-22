@@ -34,3 +34,7 @@ print(count_flat_middle([1, 1]))           # 0
 print(count_flat_middle([1, 2, 1]))        # 0
 print(count_flat_middle([3, 3, 2, 3, 3]))  # 0
 print(count_flat_middle([5, 5, 5, 5, 5]))  # 3
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Triple Comparison, Neighbor Comparison, Counting

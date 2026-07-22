@@ -16,9 +16,6 @@
 
 def count_different_from_neighbors(nums: list[int]) -> int:
 
-    # Alright, pretty simple. It has to have neighbors, which is given with the code i'll be writing.
-    # I feel like it's just a != to the number before and after it.
-
     count = 0
 
     for i in range(1, len(nums) - 1):

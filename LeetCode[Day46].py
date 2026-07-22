@@ -36,3 +36,7 @@ print(count_equal_to_both_neighbors([1, 1]))           # 0
 print(count_equal_to_both_neighbors([1, 2, 1]))        # 0
 print(count_equal_to_both_neighbors([2, 2, 3, 2, 2]))  # 0
 print(count_equal_to_both_neighbors([4, 4, 4, 1, 1]))  # 1
+
+# Space Complexity = O(1)
+# Time Complexity = O(n)
+# Pattern = Neighbor Comparison, Triple Comparison, Counting

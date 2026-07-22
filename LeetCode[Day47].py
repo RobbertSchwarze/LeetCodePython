@@ -22,7 +22,7 @@ def count_between_neighbors(nums: list[int]) -> int:
 
         if (nums[i] > nums[i + 1] and nums[i] < nums[i - 1]):
             count += 1
-        elif(nums[i] < nums[i + 1] and nums[i] > nums[i - 1]):
+        elif (nums[i] < nums[i + 1] and nums[i] > nums[i - 1]):
             count += 1
     
     return count
@@ -37,5 +37,5 @@ print(count_between_neighbors([1]))              # 0
 print(count_between_neighbors([1, 2]))           # 0
 print(count_between_neighbors([1, 1, 1]))        # 0
 print(count_between_neighbors([1, 2, 1]))        # 0
-print(count_between_neighbors([3, 2, 4, 1, 5]))  # 2
-print(count_between_neighbors([5, 3, 4, 2, 1]))  # 2
+print(count_between_neighbors([3, 2, 4, 1, 5]))  # 0
+print(count_between_neighbors([5, 3, 4, 2, 1]))  # 1

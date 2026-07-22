@@ -24,23 +24,15 @@
 # [2, 4, 6, 8, 10] -> 3
 # [1, 3, 5, 4, 3] -> 2
 
-# Function name:
-# count_middle_balanced
-
 def count_middle_balanced(nums: list[int]) -> int:
     
     count = 0
 
-    # So I think what they mean is, we have to find the average, so I will be doing a triple comparison.
-    # Then I'll be doing a function. Where I'll get the average so ( 1 + 4) / 2 has to equal the middle number.
-
     for i in range(1, len(nums) - 1):
 
-        # We'll do the calc
+        neighbor_average = (nums[i - 1] + nums[i + 1]) / 2
 
-        middle_balanced = (nums[i - 1] + nums[ i + 1]) / 2
-
-        if (middle_balanced == nums[i]):
+        if (neighbor_average == nums[i]):
             count += 1
     
     return count
@@ -58,3 +50,7 @@ print(count_middle_balanced([3, 2, 1]))          # 1
 print(count_middle_balanced([1, 2, 4]))          # 0
 print(count_middle_balanced([2, 4, 6, 8, 10]))   # 3
 print(count_middle_balanced([1, 3, 5, 4, 3]))    # 2
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Neighbor Comparison, Triple Comparison, Counting

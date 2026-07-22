@@ -42,3 +42,7 @@ print(count_same_side_neighbors([1, 1, 1]))        # 0
 print(count_same_side_neighbors([1, 2, 1]))        # 1
 print(count_same_side_neighbors([3, 2, 4, 1, 5]))  # 3
 print(count_same_side_neighbors([5, 3, 4, 2, 1]))  # 2
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Neighbor Comparison, Counting.

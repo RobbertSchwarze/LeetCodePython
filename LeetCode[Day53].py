@@ -39,3 +39,7 @@ print(count_not_equal_to_both_neighbors([2, 2, 2]))        # 0
 print(count_not_equal_to_both_neighbors([2, 2, 3, 2]))     # 2
 print(count_not_equal_to_both_neighbors([1, 2, 3, 4]))     # 2
 print(count_not_equal_to_both_neighbors([5, 5, 4, 4, 4]))  # 2
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Neighbor Comparison, Triple Comparison, Counting

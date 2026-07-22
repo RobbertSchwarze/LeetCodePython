@@ -17,7 +17,6 @@ def count_greater_than_neighbors(nums: list[int]) -> int:
 
     count = 0 
 
-    # Okay so we need to compare the middle number, if it's bigger then the one before, and after it. It counts!
     for i in range(1, len(nums) - 1):
         if (nums[i] > nums[i - 1] and nums[i] > nums[i + 1]):
             count += 1
@@ -35,3 +34,7 @@ print(count_greater_than_neighbors([1, 2]))           # 0
 print(count_greater_than_neighbors([1, 1, 1]))        # 0
 print(count_greater_than_neighbors([3, 1, 3]))        # 0
 print(count_greater_than_neighbors([1, 4, 1, 5, 1]))  # 2
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Neighbor Comparison, Triple Comparison, Counting

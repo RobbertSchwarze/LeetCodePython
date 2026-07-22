@@ -80,4 +80,4 @@ print(count_direction_changes([1, 1, 2, 1, 1]))     # 1
 
 # Time Complexity = O(n)
 # Space Complexity = O(1)
-# Pattern = Neighbor Tracking, Counting 
+# Pattern = Direction Tracking, Neighbor Comparison, State Tracking, Counting 
