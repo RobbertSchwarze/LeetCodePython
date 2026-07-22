@@ -38,5 +38,9 @@ print(count_greater_than_exactly_one_neighbor([1]))              # 0
 print(count_greater_than_exactly_one_neighbor([1, 2]))           # 0
 print(count_greater_than_exactly_one_neighbor([1, 1, 1]))        # 0
 print(count_greater_than_exactly_one_neighbor([1, 2, 1]))        # 0
-print(count_greater_than_exactly_one_neighbor([2, 1, 3, 2]))     # 1
+print(count_greater_than_exactly_one_neighbor([2, 1, 3, 2]))     # 0
 print(count_greater_than_exactly_one_neighbor([5, 3, 4, 2, 1]))  # 1
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Triple Comparison, Neighbor Comparison, Counting, Boolean Logic
