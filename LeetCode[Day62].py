@@ -52,3 +52,7 @@ print(longest_increasing_streak([5, 6, 7, 8]))          # 4
 print(longest_increasing_streak([1, 3, 2, 4, 5, 6, 1])) # 4
 print(longest_increasing_streak([1, 2, 1, 2, 3]))       # 3
 print(longest_increasing_streak([-3, -2, -1, -4]))      # 3
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern: Streak Tracking

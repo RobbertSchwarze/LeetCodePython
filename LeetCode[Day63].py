@@ -54,3 +54,7 @@ print(longest_decreasing_streak([5, 4, 3, 2]))          # 4
 print(longest_decreasing_streak([3, 2, 5, 4, 1]))       # 3
 print(longest_decreasing_streak([5, 5, 4, 3, 2, 6]))    # 4
 print(longest_decreasing_streak([-1, -2, -3, 0, -1]))   # 3
+
+# Time Complexity = O(n)
+# Space Complexity = O(1)
+# Pattern = Longest Decreasing Streak
